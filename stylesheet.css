@@ -16,6 +16,15 @@ body {
     margin-top: 30px;
 }
 
+.emails {
+    display: ;
+    letter-spacing: 5px;
+    font-family: print;
+    color: #5d5d5d;
+    font-size: 24px;
+    text-align: center;
+}
+
 .title {
     font-family: print;
     letter-spacing: 9px;
