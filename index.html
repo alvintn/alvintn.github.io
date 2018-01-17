@@ -3,9 +3,6 @@
 <head>
   <link rel="stylesheet" type="text/css" href="./stylesheet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="http://momentjs.com/downloads/moment.js"></script>
-  <script src="http://momentjs.com/downloads/moment-timezone.js"></script>
-  <script src="fadein.js"></script>
   <title>Hi, I'm Alvin.</title>
 </head>
 <body>
@@ -15,19 +12,15 @@
       hi.
 
     </div>
-    <div class="timeLA"><p id="local">CA</p></div>
+    <div class="myname">alvin.</p></div>
 
     <div id="links">
       <a href="./" class="links">Home</a>
-      <a href="aboutme.html" class="links">About Me</a>
-      <a href="projects.html" class="links">Projects</a>
-      <a href="contact.html" class="links">Contact</a>
+      <a href="aboutme" class="links">About Me</a>
+      <a href="projects" class="links">Projects</a>
+      <a href="contact" class="links">Contact</a>
     </div>
   </div>
 
-
-  <script>
-    document.getElementById("local").innerHTML = moment().tz("America/Los_Angeles").format("h:mm a");
-  </script>
 </body>
 </html>

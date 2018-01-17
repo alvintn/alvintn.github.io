@@ -13,8 +13,8 @@ body {
 .nav-menu {
     position: fixed;
     margin-top: 30px;
-    top: 3%;
-    left: 3%;
+    top: 40px;
+    left: 40px;
     transform: translate(-50%, -50%);
 }
 
@@ -27,15 +27,17 @@ body {
     text-align: center;
 }
 
-.timeLA {
+.myname {
     font-family: print;
-    margin-top: 30px;
-    margin-left:0px;
-    font-size: 12px;
+    padding-top: 40px;
+    padding-left: :10px;
+    padding-right: 10px;
+    font-size: 18px;
     line-height: 0px;
+    letter-spacing: 1px;
     text-align: center;
     color: #5d5d5d;
-    text-transform: uppercase;
+    text-transform: lowercase;
     -webkit-transition: all 0.4s ease-out;
 }
 
@@ -74,10 +76,10 @@ body {
 }
 
 #links {
-    display: inline;
-    position:absolute;
-    margin-left:50px;
-    margin-top:-70px;
+    display: block;
+    position:fixed;
+    left:50px;
+    top:-30px;
     opacity:0;
 }
 
@@ -91,22 +93,28 @@ body {
 
 .main:hover #links{
     opacity:1;
-    -webkit-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-in-out;
 }
 
 .main:hover .title{
     margin-left:-62px;
-    -webkit-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-in-out;
 }
 
 .nav-menu:hover #links{
     opacity:1;
-    -webkit-transition: all 0.4s ease-out;
+    left:0px;
+    -webkit-transition: all 0.4s ease-in-out;
 }
 
 .nav-menu:hover .title{
-    margin-left:-62px;
-    -webkit-transition: all 0.4s ease-out;
+    margin-left:-90px;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.nav-menu:hover .myname {
+    margin-top:-85px;
+    -webkit-transition: all 0.4s ease-in-out;
 }
 
 .active {
@@ -137,7 +145,7 @@ a, a:link, a:visited, a:active {
     z-index: 999;
     text-decoration: none;
     letter-spacing: 1px;
-    -webkit-transition: all 0.4s ease-out;
-    -moz-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
