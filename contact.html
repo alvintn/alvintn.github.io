@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="./stylesheet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="scrollscript.js"></script>
+  <script src="fadein.js"></script>
   <title>contact me.</title>
 </head>
 <body>
@@ -13,6 +13,8 @@
       <div class="title" style="margin-bottom:10px;color:c.;">
         c.
       </div>
+
+      <div class="timeLA"><p id="local">CA</p></div>
       <div id="links">
         <a href="./" class="links">Home</a>
         <a href="aboutme" class="links">About Me</a>
@@ -27,6 +29,8 @@
       <p>alvintn@uci.edu</p>
     </div>
   </div>
-
+  <script>
+    document.getElementById("local").innerHTML = moment().tz("America/Los_Angeles").format("h:mm a");
+  </script>
 </body>
 </html>
