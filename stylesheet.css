@@ -8,8 +8,12 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
+}
+
+.nav-menu {
+    position: fixed;
+    margin-top: 30px;
 }
 
 .title {
@@ -68,6 +72,16 @@ body {
 }
 
 .main:hover .title{
+    margin-left:-62px;
+    -webkit-transition: all 0.4s ease-out;
+}
+
+.nav-menu:hover #links{
+    opacity:1;
+    -webkit-transition: all 0.4s ease-out;
+}
+
+.nav-menu:hover .title{
     margin-left:-62px;
     -webkit-transition: all 0.4s ease-out;
 }

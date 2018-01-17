@@ -10,8 +10,8 @@
 
 
     <div class="nav-menu">
-      <div class="title" style="margin-bottom:10px;color:p.;">
-        p.
+      <div class="title" style="margin-bottom:10px;color:c.;">
+        c.
       </div>
       <div id="links">
         <a href="./" class="links">Home</a>
@@ -22,11 +22,8 @@
     </div>
 
   <div id="container">
-    <div class="shown"><img src="https://i.imgur.com/EznToth.jpg" alt="Drawing"></div>
-    <div class="hidden"><img src="https://i.imgur.com/6r2pyFB.jpg" alt="Drawing"></div>
-    <div class="hidden"><img src="https://i.imgur.com/msLpu6K.jpg" alt="Drawing"></div>
-    <div class="hidden"><img src="https://i.imgur.com/SOTErXW.jpg" alt="Drawing"></div>
-    <div class="hidden"><img src="https://i.imgur.com/jwkGrUB.jpg" alt="Drawing"></div>
+    <div class="shown">alvintn@uci.edu</div>
+    <div class="hidden">alvinthiennguyen@gmail.com</div>
   </div>
 
 </body>
