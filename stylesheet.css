@@ -48,7 +48,7 @@ body {
 }
 
 .myname {
-    font-family: print;
+    font-family: "Times New Roman";
     padding-top: 40px;
     padding-left: :10px;
     padding-right: 10px;
@@ -64,7 +64,7 @@ body {
 }
 
 .title {
-    font-family: print;
+    font-family: "Times New Roman";
     letter-spacing: 9px;
     margin: 10px, 1px;
     font-size: 64px;
@@ -83,7 +83,7 @@ body {
     padding-right: 5px;
     margin-bottom: 2px;
     padding: 2px;
-    font-family: consolas;
+    font-family: "consolas";
     font-size: 17px;
     text-transform: uppercase;
     width: 150px;
@@ -132,9 +132,15 @@ body {
 }
 
 .home:hover .title{
-    margin-left:-62px;
+    margin-left:-58px;
     -webkit-transition: all 0.4s ease-in-out;
 }
+
+.home:hover .myname{
+    margin-left:-58px;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
 
 .all:hover #links{
     opacity:1;
