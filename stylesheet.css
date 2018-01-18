@@ -1,6 +1,19 @@
 body {
-  font-family: consolas, myriad, avenir, calibri, arial;
-  font-size: large;
+    font-family: consolas, myriad, avenir, calibri, arial;
+    font-size: large;
+    background: url("https://i.imgur.com/vmxAVh9.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.all {
+    height:100vh;
+}
+
+.home {
+    height:100vh;
 }
 
 .main {
@@ -13,7 +26,7 @@ body {
 .main-nav {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
 }
 
@@ -46,12 +59,14 @@ body {
     color: #5d5d5d;
     text-transform: lowercase;
     -webkit-transition: all 0.4s ease-out;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .title {
     font-family: print;
     letter-spacing: 9px;
-    margin-left:0px;
+    margin: 10px, 1px;
     font-size: 64px;
     line-height: 0px;
     text-align: center;
@@ -59,6 +74,8 @@ body {
     text-transform: uppercase;
     position: fixed;
     -webkit-transition: all 0.4s ease-out;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .links {
@@ -95,10 +112,11 @@ body {
     left:50px;
     top:-30px;
     opacity:0;
+    visibility: hidden;
 }
 
 #links a {
-    color: #aaa;
+    color: #636363;
 }
 
 #links a:hover {
@@ -106,28 +124,32 @@ body {
 }
 
 
-body.nojQuery > .main-nav:hover #links{
-    opacity:1;
+.home:hover #links{
+    opacity: 1;
+    display: block;
+    visibility: visible;
     -webkit-transition: all 0.4s ease-in-out;
 }
 
-body.nojQuery > .main-nav:hover .title{
+.home:hover .title{
     margin-left:-62px;
     -webkit-transition: all 0.4s ease-in-out;
 }
 
-body.nojQuery > .nav-menu:hover #links{
+.all:hover #links{
     opacity:1;
     left:0px;
+    display: block;
+    visibility: visible;
     -webkit-transition: all 0.4s ease-in-out;
 }
 
-body.nojQuery > .nav-menu:hover .title{
+.all:hover .title{
     margin-left:-90px;
     -webkit-transition: all 0.4s ease-in-out;
 }
 
-body.nojQuery > .nav-menu:hover .myname {
+.all:hover .myname {
     margin-top:-85px;
     -webkit-transition: all 0.4s ease-in-out;
 }
