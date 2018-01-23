@@ -39,7 +39,7 @@ body {
 }
 
 .emails {
-    display: ;
+    display: inline;
     letter-spacing: 5px;
     font-family: print;
     color: #5d5d5d;
@@ -48,10 +48,11 @@ body {
 }
 
 .myname {
+    position: relative;
     font-family: "Times New Roman";
     padding-top: 40px;
-    padding-left: :10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 18px;
     line-height: 0px;
     letter-spacing: 1px;
@@ -61,6 +62,8 @@ body {
     -webkit-transition: all 0.4s ease-out;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
+    transition: all 0.4s ease-in-out;
+    user-select: none;
 }
 
 .title {
@@ -76,6 +79,8 @@ body {
     -webkit-transition: all 0.4s ease-out;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
+    transition: all 0.4s ease-in-out;
+    user-select: none;
 }
 
 .links {
@@ -86,7 +91,7 @@ body {
     font-family: "consolas";
     font-size: 17px;
     text-transform: uppercase;
-    width: 150px;
+    width: 100px;
     text-align: left;
     border-right: 0px solid #99ddd3;
     border-left: 0px solid #99ddd3;
@@ -129,16 +134,23 @@ body {
     display: block;
     visibility: visible;
     -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .home:hover .title{
-    margin-left:-58px;
     -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -ms-transform: translate(-58px,0px); /* IE 9 */
+    -webkit-transform: translate(-58px,0px); /* Safari */
+    transform: translate(-58px,0px)
 }
 
 .home:hover .myname{
-    margin-left:-58px;
     -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -ms-transform: translate(-58px,0px); /* IE 9 */
+    -webkit-transform: translate(-58px,0px); /* Safari */
+    transform: translate(-58px,0px)
 }
 
 
@@ -148,16 +160,23 @@ body {
     display: block;
     visibility: visible;
     -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .all:hover .title{
-    margin-left:-90px;
     -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -ms-transform: translate(-90px,0px); /* IE 9 */
+    -webkit-transform: translate(-90px,0px); /* Safari */
+    transform: translate(-90px,0px)
 }
 
 .all:hover .myname {
-    margin-top:-85px;
     -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -ms-transform: translate(0px,-90px); /* IE 9 */
+    -webkit-transform: translate(0px,-90px); /* Safari */
+    transform: translate(0px,-90px)
 }
 
 
@@ -177,10 +196,12 @@ img {
 }
 
 .hidden {
+  visibility: hidden;
   opacity: 0;
 }
 
-.shown {
+.show {
+  visibility: visible;
   opacity: 1;
 }
 
